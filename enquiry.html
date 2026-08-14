@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Service | Ubuntu Tech Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Ubuntu Tech Solutions</h1>
+            <p>Your IT Department, Without the overhead</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Book a Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-header">
+            <h2>Book a Service</h2>
+            <p>Fill out the form below to schedule a quote or schedule an on-site visit or request remote support. We typically respond within 2 hours during business hours (Monday-Friday).</p>
+        </section>
+        <section class="form-section">
+               <form action="#" method="post">
+                <fieldset>
+                    <legend>Your Details</legend>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required placeholder="e.g. John Smith">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="e.g. John@company.co.za">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="e.g. 082 123 4567">
+
+                    <label for="organizations">Organization:</label>
+                    <input type="text" id="organizations" name="organizations" placeholder="e.g. ABC Primary School">
+                </fieldset>
+                <fieldset>
+                    <legend>Service Required</legend>
+                    <label for="service-type">Type of Service:</label>
+                    <select id="service-type" name="service-type" required>
+                        <option value="">--Select a Service--</option>
+                        <option value="computer-repairs">Computer & Laptop Repairs</option>
+                        <option value="network-installation">Network Installation & Wi-Fi</option>
+                        <option value="managed-it-support">Managed IT Support</option>
+                        <option value="cloud-migration">Cloud Migration Services</option>
+                        <option value="cybersecurity">Cybersecurity Audits & Data Protection</option>
+                        <option value="it-consulting">IT Consulting</option>
+                        <option value="other">Other / Not Sure</option>
+                    </select>
+
+                    <label for="service-mode">Preferred Service Mode:</label>
+                    <select id="service-mode" name="service-mode" required>
+                        <option value="">--Select a Mode--</option>
+                        <option value="onsite">On-Site Visit</option>
+                        <option value="remote">Remote Support</option>
+                        <option value="phone">Phone Consultation</option>
+                    </select>
+
+                    <label for="preferred-date">Preferred Date:</label>
+                    <input type="date" id="preferred-date" name="preferred-date" required>
+
+                    <label for="preferred-time">Preferred Time:</label>
+                    <select name="preferred-time" id="preferred-time" required>
+                        <option value="">--Select a Time--</option>
+                        <option value="morning">Morning (8am - 12pm)</option>
+                        <option value="afternoon">Afternoon (12pm - 4pm)</option>
+                        <option value="evening">Evening (4pm - 7pm)</option>
+                        <option value="anytime">Anytime</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Describe Your issue</legend>
+                    <label for="issue-description">Issue Description:</label>
+                    <textarea id="issue-description" name="issue-description" rows="5" placeholder="Please provide a brief description of the issue or service you require." required></textarea>
+
+                    <label for="urgency">Urgency Level:</label>
+                    <select id="urgency" name="urgency" required>
+                        <option value="">--Select Urgency--</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                        <option value="emergency">Emergency</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Consent</legend>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        I consent to Ubuntu Tech Solutions processing my personal Information in accordance with POPIA. *
+                    </label>
+                </fieldset>
+                <button type="submit" class="cta-button">Submit Booking Request</button>
+                <p class="form-note">* Required fields. We will never share your personal information with third parties.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Ubuntu Tech Solutions. All rights reserved.</p>
+        <p>Contact: 031 555 0199 | Email: info@ubuntutecsolutions.co.za | WhatsApp: 072 123 4567</p>
+        <p>123 Ubuntu Street, Durban, KwaZulu-Natal 4001</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

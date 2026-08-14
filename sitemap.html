@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap | Ubuntu Tech Solutions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            padding: 2rem;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1a3a5c;
+            text-align: center;
+            border-bottom: 3px solid #2ecc71;
+            padding-bottom: 0.5rem;
+        }
+        .sitemap {
+            margin-top: 2rem;
+        }
+        .node {
+            background: #1a3a5c;
+            color: #fff;
+            padding: 1rem;
+            margin: 0.5rem auto;
+            border-radius: 6px;
+            text-align: center;
+            max-width: 400px;
+            font-weight: bold;
+        }
+        .children {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .child {
+            background: #e8f4f8;
+            color: #1a3a5c;
+            padding: 0.8rem 1.2rem;
+            border-radius: 6px;
+            font-weight: 500;
+            min-width: 140px;
+            text-align: center;
+            border: 2px solid #1a3a5c;
+        }
+        .sub-children {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        .sub-child {
+            background: #fafafa;
+            color: #1a3a5c;
+            padding: 0.5rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            border: 1px solid #ccc;
+        }
+        .connector {
+            text-align: center;
+            color: #888;
+            font-size: 1.5rem;
+            margin: 0.2rem 0;
+        }
+        .folder {
+            background: #f39c12;
+            color: #fff;
+            border: 2px solid #d35400;
+        }
+        .nav-flow {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #fffbe6;
+            border: 1px solid #ffe58f;
+            border-radius: 6px;
+        }
+        .nav-flow h3 {
+            color: #1a3a5c;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ubuntu Tech Solutions - Website Sitemap</h1>
+        <p style="text-align:center; color:#666;">Visual representation of the website structure and hierarchical relationships</p>
+        
+        <div class="sitemap">
+            <!-- Root -->
+            <div class="node">Root Directory<br><small>ubuntu-tech-solutions/</small></div>
+            <div class="connector">&#8595;</div>
+            
+            <!-- HTML Pages -->
+            <div class="children">
+                <div>
+                    <div class="child">index.html<br><small>(Homepage)</small></div>
+                    <div class="sub-children">
+                        <div class="sub-child">Hero Section</div>
+                        <div class="sub-child">Service Cards</div>
+                        <div class="sub-child">Trust Badges</div>
+                        <div class="sub-child">Coverage Areas</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="child">about.html<br><small>(About Us)</small></div>
+                    <div class="sub-children">
+                        <div class="sub-child">Company Story</div>
+                        <div class="sub-child">Mission & Vision</div>
+                        <div class="sub-child">Team Profiles</div>
+                        <div class="sub-child">Community</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="child">services.html<br><small>(Services)</small></div>
+                    <div class="sub-children">
+                        <div class="sub-child">Computer Repairs</div>
+                        <div class="sub-child">Network & WiFi</div>
+                        <div class="sub-child">Managed IT</div>
+                        <div class="sub-child">Cybersecurity</div>
+                        <div class="sub-child">Cloud Migration</div>
+                        <div class="sub-child">IT Consulting</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="child">enquiry.html<br><small>(Book a Service)</small></div>
+                    <div class="sub-children">
+                        <div class="sub-child">Personal Details</div>
+                        <div class="sub-child">Service Selection</div>
+                        <div class="sub-child">Issue Description</div>
+                        <div class="sub-child">POPIA Consent</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="child">contact.html<br><small>(Contact)</small></div>
+                    <div class="sub-children">
+                        <div class="sub-child">Emergency Banner</div>
+                        <div class="sub-child">Contact Grid</div>
+                        <div class="sub-child">Map Embed</div>
+                        <div class="sub-child">Secondary Hub</div>
+                        <div class="sub-child">Quick Form</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="connector">&#8595;</div>
+            
+            <!-- Asset Folders -->
+            <div class="children">
+                <div>
+                    <div class="child folder">css/</div>
+                    <div class="sub-children">
+                        <div class="sub-child">style.css</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="child folder">js/</div>
+                    <div class="sub-children">
+                        <div class="sub-child">script.js</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="child folder">images/</div>
+                    <div class="sub-children">
+                        <div class="sub-child">Logos</div>
+                        <div class="sub-child">Team Photos</div>
+                        <div class="sub-child">Service Images</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="child folder">documents/</div>
+                    <div class="sub-children">
+                        <div class="sub-child">Research</div>
+                        <div class="sub-child">References</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="child folder">text/</div>
+                    <div class="sub-children">
+                        <div class="sub-child">Content Drafts</div>
+                        <div class="sub-child">Sitemap Text</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav-flow">
+            <h3>Navigation Flow</h3>
+            <p>All five HTML pages are interconnected through a consistent top navigation menu. The <strong>Homepage</strong> serves as the entry point, with direct links to all other sections. Each page contains a complete navigation bar ensuring users can move between any two pages in a single click.</p>
+        </div>
+    </div>
+</body>
+</html>
